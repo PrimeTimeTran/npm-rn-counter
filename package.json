@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PrimeTimeTran/npm-counter"
+    "url": "git+https://github.com/PrimeTimeTran/npm-rn-counter.git"
   },
   "scripts": {
     "start": "expo start",
