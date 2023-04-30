@@ -43,16 +43,16 @@ export default Counter;
 ```
 
 - Add necessary **keys** to package.json so that `npm` will include correct files and display appropriate info.
-
-Most importantly here we're including the `./src` folder where we define our `Counter` component.
-We also include a `README.md` for information about the project.
-Lastly we have some repo information which shows up on the npm.com registry web page.
+  - Define entry point for modules in this package `"main": "index.js"`.
+  - Define package version `"version": "1.0.14"`.
+  - Include the `./src` and `./README.md` from `"files": []`.
+  - Repo info which shows up on the npm.com registry web page `"repository": {}`.
 
 Semantic version which we increment each time we want to publish a new version of our package.
 
 ```json
 "main": "index.js",
-"version": "1.0.14",
+"version": "1.0.17",
 "files": [
     "src",
     "README.md"
