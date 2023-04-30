@@ -7,10 +7,10 @@ function Counter() {
     <View>
       <Text>Counter {count}</Text>
       <TouchableOpacity onPress={() => setCount(count + 1)}>
-        <Text>Increment</Text>
+        <Text style={{ color: "green", fontSize: 20 }}>Increment</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => setCount(count - 1)}>
-        <Text>Decrement</Text>
+        <Text style={{ color: "red", fontSize: 20 }}>Decrement</Text>
       </TouchableOpacity>
     </View>
   );

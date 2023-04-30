@@ -48,8 +48,11 @@ Most importantly here we're including the `./src` folder where we define our `Co
 We also include a `README.md` for information about the project.
 Lastly we have some repo information which shows up on the npm.com registry web page.
 
+Semantic version which we increment each time we want to publish a new version of our package.
+
 ```json
 "main": "index.js",
+"version": "1.0.14",
 "files": [
     "src",
     "README.md"
