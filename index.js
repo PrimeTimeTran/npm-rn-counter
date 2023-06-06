@@ -1,3 +1,3 @@
-import { Counter, add, LIFE } from "./src/lib/components/Counter";
+import { Counter } from "./src/lib/components/Counter";
 
-export { Counter, add, LIFE };
+export { Counter };

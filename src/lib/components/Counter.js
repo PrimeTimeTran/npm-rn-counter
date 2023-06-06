@@ -6,18 +6,11 @@ import {
   TouchableOpacity
 } from "react-native";
 
-function Counter({ life = 1 }) {
+function Counter() {
   const [count, setCount] = useState(0);
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Counter</Text>
-      <View style={{ flexDirection: "row", alignItems: "center" }}>
-        <View style={styles.line} />
-        <View>
-          <Text style={styles.count}>{count * life}</Text>
-        </View>
-        <View style={styles.line} />
-      </View>
+    <View>
+      <Text>Counter {count}</Text>
       <TouchableOpacity onPress={() => setCount(count + 1)}>
         <Text style={{ color: "green", fontSize: 20 }}>Increment</Text>
       </TouchableOpacity>
@@ -28,10 +21,7 @@ function Counter({ life = 1 }) {
   );
 }
 
-const LIFE = 42;
-const add = (n) => n + LIFE;
-
-export { Counter, add, LIFE };
+export { Counter };
 
 const styles = StyleSheet.create({ 
   container: {
