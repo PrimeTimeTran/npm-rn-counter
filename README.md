@@ -10,7 +10,7 @@
   - This package exports from `./src/lib/Counter.js` which exports 1 component, constant, function each.
 
 - Add necessary **keys** to package.json to configure `npm`.
-  - Version package `"version": "1.0.48"`.
+  - Version package `"version": "1.0.50"`.
   - Include the `./src` and `./README.md` with `"files": []`.
   - Define entry point for modules in this package `"main": "index.js"`.
   - Info which shows up on the npm.com registry web page `"repository": {}`.
@@ -19,7 +19,7 @@
 
   ```json
   "main": "./src/lib/Counter.js",
-  "version": "1.0.48",
+  "version": "1.0.50",
   "files": [
       "src",
       "README.md"
