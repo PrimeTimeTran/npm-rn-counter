@@ -6,7 +6,7 @@ import {
   TouchableOpacity
 } from "react-native";
 
-export default function Counter({ LIFE = 1 }) {
+function Counter() {
   const [count, setCount] = useState(0);
   return (
     <View style={styles.container}>
@@ -14,7 +14,7 @@ export default function Counter({ LIFE = 1 }) {
       <View style={{ flexDirection: "row", alignItems: "center" }}>
         <View style={{ flex: 1, height: 1, backgroundColor: "black" }} />
         <View>
-          <Text style={styles.count}>{count * LIFE}</Text>
+          <Text style={styles.count}>{count}</Text>
         </View>
         <View style={{ flex: 1, height: 1, backgroundColor: "black" }} />
       </View>
@@ -45,8 +45,10 @@ const styles = StyleSheet.create({
   }
 })
 
-const LIFE = 42
+const LIFE = 42;
 
 const add = n => n + LIFE
 
-export { Counter, LIFE, add };
+export default Counter
+
+export { Counter, add, LIFE };

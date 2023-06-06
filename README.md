@@ -18,8 +18,6 @@
   export { Counter, LIFE, add } from "./components/Counter";
   ```
 
-
-
 - Add necessary **keys** to package.json to configure `npm`.
   - Version package `"version": "1.0.18"`.
   - Include the `./src` and `./README.md` with `"files": []`.
