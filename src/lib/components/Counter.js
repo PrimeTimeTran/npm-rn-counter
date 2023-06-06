@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { 
   View, 
   Text, 
-  StyleSheet, 
+  StyleSheet,
   TouchableOpacity
 } from "react-native";
 
-function Counter({ life = 1}) {
+function Counter({ life = 1 }) {
   const [count, setCount] = useState(0);
   return (
     <View style={styles.container}>
@@ -27,6 +27,11 @@ function Counter({ life = 1}) {
     </View>
   );
 }
+
+const LIFE = 42;
+const add = (n) => n + LIFE;
+
+export { Counter, add, LIFE };
 
 const styles = StyleSheet.create({ 
   container: {
@@ -50,11 +55,3 @@ const styles = StyleSheet.create({
     backgroundColor: "black" 
   }
 })
-
-const LIFE = 42;
-
-const add = n => n + LIFE
-
-export default Counter
-
-export { Counter, add, LIFE };
