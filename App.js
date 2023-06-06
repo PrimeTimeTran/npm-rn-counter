@@ -4,6 +4,8 @@ import { StyleSheet, Text, View } from "react-native";
 
 import Counter, { add, LIFE } from "./src/lib/Counter";
 
+console.log({ LIFE, foo: add(LIFE) });
+
 export default function App() {
   return (
     <View style={styles.container}>
