@@ -47,4 +47,6 @@ const styles = StyleSheet.create({
 
 const LIFE = 42
 
-export { Counter, LIFE };
+const add = n => n + LIFE
+
+export { Counter, LIFE, add };
