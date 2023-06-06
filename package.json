@@ -1,7 +1,7 @@
 {
   "name": "npm-rn-counter",
-  "version": "1.0.46",
-  "main": "Counter.js",
+  "version": "1.0.47",
+  "main": "./src/lib/Counter.js",
   "files": [
     "dist",
     "README.md",
