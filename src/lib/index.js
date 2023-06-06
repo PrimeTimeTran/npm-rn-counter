@@ -1,1 +1,1 @@
-export { Counter } from "./components/Counter";
+export { Counter, LIFE } from "./components/Counter";
